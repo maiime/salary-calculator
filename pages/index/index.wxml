@@ -1,0 +1,22 @@
+<!--index.wxml-->
+<view class="container">
+  <view class='form_group'>
+    <label class='form_item'>
+      <text class='form_text'>test</text>
+      <input type='digit' bindinput='setValue' value='{{value}}'></input>
+    </label>
+    <label class='form_item'>
+      <text class='form_text'>自定义</text>
+      <switch bindchange='setIsCustom'></switch>
+    </label>
+    <label class='form_item'>
+      <text class='form_text'>test</text>
+      <input type='digit' value='{{base}}'></input>
+    </label>
+    <picker class='form_item
+    ' bindchange='setPercent' range='{{percentData}}' value='{{percentValue}}'>
+      <text class='form_text'>picker</text>
+      <text class='form_text'>{{percentData[percentValue]}}</text>
+    </picker>
+  </view>
+</view>

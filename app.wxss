@@ -1,0 +1,38 @@
+/**app.wxss**/
+page {
+  background: #f5f5f5;
+}
+
+.form_group {
+  background: #fff;
+  border-top: 1px solid #eee;
+  border-bottom: 1px solid #eee;
+  font-size: 28rpx;
+}
+
+.form_item {
+  height: 80rpx;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0 30rpx;
+  position: relative;
+}
+
+.form_item::after {
+  content: '';
+  position: absolute;
+  width: 730rpx;
+  height: 1px;
+  background: #eee;
+  bottom: 0;
+  right: 0;
+}
+
+.form_group > .form_item:nth-last-child(1)::after {
+  display: none;
+}
+
+.form_item input {
+  text-align: right;
+}
